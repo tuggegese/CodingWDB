@@ -3,7 +3,7 @@ import os
 from waitress import serve
 
 from src import api
-from routes import configure_routes
+from src.routes import configure_routes
 
 configure_routes(api)
 
