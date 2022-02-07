@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Transactions {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="row">
+      <div class="col-12 mb-4">
+          <div class="card border-0 shadow components-section">
+              <div class="card-body">     
+                  <div class="row mb-4">
+                      <div class="col-lg-4 col-sm-6">
+                          <!-- Form -->
+                          <form method="post" action="" class="mt-4">
+                          {{ form.hidden_tag() }}
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <span class="fas fa-user-circle"></span>
+                                        </span>
+                                        {{ form.strategy_name(placeholder="Strategy name", class="form-control") }}
+                                    </div>  
+                                </div>
+                            <div class="d-grid">
+                            <button type="submit" name="save" class="btn btn-gray-800">Save</button>
+                            </div>
+                            <div class="d-grid">
+                            <button type="dicard" name="discard" class="btn btn-gray-800">Discard</button>
+                            </div>
+                          </form>
+                          <!-- End of Form -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  TTodo's
+  - create strategy here including all settings
+     o should handle buying/ selling signals
+     o codemirror
+     o etc
+
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Transactions {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="btn-toolbar mb-2 mb-md-0">
+      <a href="{{ url_for('strategies_blueprint.createstrategy') }}" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
+          <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+          New Strategie
+      </a>
+      <div class="btn-group ms-2 ms-lg-3">
+          <button type="button" class="btn btn-sm btn-outline-gray-600">My Strategies</button>
+          <button type="button" class="btn btn-sm btn-outline-gray-600">Public Strategies</button>
+      </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
