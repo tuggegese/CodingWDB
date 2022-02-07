@@ -5,4 +5,4 @@ configure_routes(api)
 
 if __name__ == '__main__':
     print("Starting API...")
-    api.run(host="0.0.0.0", port=80, debug=True)
+    api.run(host="0.0.0.0", port=8080, debug=True)
