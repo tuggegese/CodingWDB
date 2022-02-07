@@ -1,7 +1,3 @@
-import os
-
-from waitress import serve
-
 from src import api
 from src.routes import configure_routes
 
