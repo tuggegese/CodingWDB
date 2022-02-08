@@ -3,7 +3,6 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-from waitress import serve
 from flask_migrate import Migrate
 from sys import exit
 from decouple import config
@@ -34,4 +33,4 @@ if DEBUG:
     app.logger.info('DBMS        = ' + app_config.SQLALCHEMY_DATABASE_URI)
 
 if __name__ == "__main__":
-    serve(app, host="0.0.0.0", port=8080)
+    app.run()
